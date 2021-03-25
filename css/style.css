@@ -74,7 +74,6 @@ h2{
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 1.5;
-  width:100%;
 }
 
 .about > img{
@@ -91,6 +90,7 @@ h2{
   line-height:1.25;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  width:100%;
 }
 .section_header{
   padding-top:20px;
@@ -124,6 +124,7 @@ h2{
 
 #quadrants{
   background-color: rgb(214, 210, 210);
+  width:100%;
 }
 
 
@@ -208,6 +209,7 @@ footer{
   padding-right: 20px;
   padding-left: 20px;
   background-color: rgb(214, 210, 210);
+
 }
 
 #contact p{
@@ -216,6 +218,7 @@ footer{
   padding-right: 20px;
   padding-left: 20px;
   background-color: rgb(214, 210, 210);
+  width:100%;
 }
 
 #contact .images img{
@@ -235,6 +238,7 @@ footer{
   font-weight: 200;
   background-color: rgb(214, 210, 210);
   padding: 20px;
+  width:100%;
 }
 .emailform form{
   display:block;
