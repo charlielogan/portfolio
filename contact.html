@@ -27,16 +27,24 @@
 			<a href="https://www.linkedin.com/in/charlie-logan/"><img src="images/linkedin.png" alt="linkedin logo" id="link"></a> 
 		</div>
 		<div class="emailform">
-			<form action="mailto:ctlogan@umich.edu" method="POST" enctype="multipart/form-data" name="EmailForm"> 
-				Name:<br>
-				<input type="text" size="19" name="ContactName"><br><br>
-				Message:<br> <textarea name="ContactCommentt" rows="6" cols="20">
-				</textarea><br><br> <input type="submit" value="Submit">
-			</form>
+			<form action="https://formspree.io/f/mbjqradd" method="POST">
+			<label>
+				<p>Your email:</p>
+				<input type="email" name="_replyto">
+				<br>
+			</label>
+			<label>
+				<p>Your message:</p>
+				<textarea name="message"></textarea>
+			</label>
+			<br>
+			<!-- your other form fields go here -->
+			<button type="submit">Send</button>
+		  </form>
 		</div>
     </main>
 	<footer>
-		<p>Charlie Logan &copy; 2021</p>
+		<p>Charlie Logan • ctlogan@umich.edu</p>
 	</footer>
 </body>
 </html>

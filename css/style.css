@@ -13,6 +13,7 @@ nav{
   padding: 0 10px;
   background-color: rgb(50, 47, 95);
   min-height:60px;
+  position: fixed;
 }
 
 nav > p{
@@ -132,12 +133,12 @@ h2{
 
 .images img{
   flex-grow: 1;
-  height: 400px;
-  width: 400px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 50px;
-  max-width: 100%;
+  max-width: 80%;
+  padding-right:40px;
+  padding-left:40px;
 }
 #quadrants .images p{
   text-align:center;
@@ -150,15 +151,26 @@ h2{
   width: 500px;
 }
 footer{
-  display:block;
+  display: flex; 
+  justify-content: center; 
   text-align:center;
+  position: relative;
+  bottom:0;
+  width: 100%;
+  background-color:rgb(50, 47, 95);
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #ncaa {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1em;
+}
+#ncaa h1{
+  margin-top: 80px;
 }
 
 #intro{
@@ -168,11 +180,11 @@ footer{
 
 #poster{
   grid-column: 1 / span 5;
-  grid-row: 2 / span 2;
+  grid-row: 2 / span 1;
 }
 #poster h2{
   margin-bottom: 20px;
-  margin-top: -100px;
+  margin-top: -60px;
 }
 #poster img, #seeds img{
   max-width: 100%;
@@ -206,10 +218,44 @@ footer{
 }
 
 #contact .images img{
-  height:200px;
-  width:200px;
+  /*Images aren't really centered??*/
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height:100px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
+.emailform{
+  margin-bottom: 80px;
+  font-size: 15px;
+  color:black;
+  font-weight: 200;
+  background-color: rgb(214, 210, 210);
+  padding: 20px;
+}
+.emailform form{
+  display:block;
+}
+.emailform input{
+  display:inline-block;
+  width:80%;
+  height:20px;
+}
+textarea{
+  display: inline-block;
+  width:80%;
+  height:80px;
+  margin-bottom: 20px;
+}
+#contact .emailform p{
+  font-size: 15px;
+  color:black;
+  font-weight: 200;
+  padding-left: 0;
+  padding-right: 0;
+}
 
 
 /*
