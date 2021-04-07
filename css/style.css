@@ -266,6 +266,15 @@ textarea{
   padding-right: 0;
 }
 
+@media all and (min-width: 650px){
+  textarea{
+    display: inline-block;
+    width:80%;
+    height:80px;
+    margin-bottom: 20px;
+  }
+}
+
 
 /*
 
