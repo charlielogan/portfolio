@@ -22,6 +22,7 @@ nav > p{
   color:white;
   font-size:23px;
 }
+
 .navlinks{
   position:relative;
   display: flex;
@@ -30,7 +31,6 @@ nav > p{
 .navlinks > li{
   padding:8px;
   font-size: 18px;
-
 }
 
 .navlink{
@@ -41,6 +41,7 @@ nav > p{
 .active_navlink{
   color:white;
   text-decoration:underline white;
+  font-size:21px;
 }
 
 .about{
@@ -98,6 +99,7 @@ h2{
   padding-top:20px;
   background-color:  rgb(50, 47, 95);
   color: white;
+  text-align:center;
 }
 
 .resume_section {
@@ -115,6 +117,7 @@ h2{
   display: list-item;
   list-style-type:circle;
 }
+
 
 .inner_section li{ 
   padding-top:8px;
@@ -139,16 +142,22 @@ h2{
 
 .images img{
   flex-grow: 1;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
   max-width: 80%;
   padding-right:40px;
   padding-left:40px;
+  padding-top:40px;
+  padding-bottom: 40px;
+  background-color: rgb(214, 210, 210);
 }
 #quadrants .images p{
   text-align:center;
   font: 15px;
+  margin-left: auto;
+  margin-right:auto;
+  width:100%;
 }
 
 
@@ -171,32 +180,35 @@ footer{
 
 #ncaa {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: .5fr 1fr 1.5fr;
   grid-gap: 1em;
   width:100%;
 }
 
 
 #intro{
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 2;
   grid-row: 1 / span 1;
 }
 
 #poster{
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 2;
   grid-row: 2 / span 1;
 }
 #poster h2{
   margin-bottom: 20px;
-  margin-top: -60px;
+  margin-top: 10px;
 }
 #poster img, #seeds img{
   max-width: 100%;
+  margin-left:10px;
+  margin-right:10px;
 }
 #seeds{
-  grid-column: 1 / span 5;
-  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+  width:100%;
 }
 #intro p{
   margin-left: 0;
@@ -224,16 +236,20 @@ footer{
   background-color: rgb(214, 210, 210);
   width:100%;
 }
+#contact .images{
+  width:100%;
+  display: flex;
+  margin-left: auto;
+  margin-right:auto;
+  justify-content: space-evenly;
+}
 
 #contact .images img{
   /*Images aren't really centered??*/
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   height:100px;
   margin-bottom: 100px;
-  text-align: center;
 }
+
 
 .emailform{
   margin-bottom: 80px;
@@ -266,13 +282,107 @@ textarea{
   padding-right: 0;
 }
 
-@media all and (min-width: 650px){
-  textarea{
-    display: inline-block;
-    width:80%;
-    height:80px;
-    margin-bottom: 20px;
+.skip-to-content-link {
+  left: -999px;
+  top:-999px;
+  display: block;
+  position: absolute;
+}
+
+.skip-to-content-link:focus {
+  left:10%;
+  top:10%;
+  background-color:white;
+}
+
+@media all and (min-width: 680px){
+  nav{
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 100%;
   }
+  
+  nav > p{
+    color:white;
+    font-size:23px;
+    width:100%;
+    text-align: center;
+    padding-top:10px;
+  }
+  .navlinks{
+    display: flex;
+    padding-right:10px;
+    justify-content: space-evenly;
+    max-width: 100%;
+    text-align: center;
+    margin: auto auto;
+  }
+
+  .images img{
+    flex-grow:0;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+
+  #ncaa {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: .5fr 1fr 1.5fr;
+    grid-gap: 1em;
+    width:100%;
+  }
+  
+  #intro{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  
+  #poster img{
+    grid-column: 1 / span 1;
+  }
+  #poster h2{
+    grid-column-start:2;
+  }
+  #poster img, #seeds img{
+    max-width: 100%;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  #seeds{
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    width:100%;
+  }
+  #intro p{
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(214, 210, 210);
+    width:100%;
+  }
+  
+  #seeds p{
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(214, 210, 210);
+  
+  }
+
+  .resume_section{
+    margin-left: 40px;
+    margin-right:40px;
+  }
+
+  .section_header{
+    text-align: left;
+  }
+
 }
 
 
