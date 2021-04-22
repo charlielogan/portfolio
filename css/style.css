@@ -160,6 +160,17 @@ h2{
   width:100%;
 }
 
+#quadrants .images img{
+  opacity:80%;
+  filter: grayscale(100%);
+}
+
+#quadrants .images img:hover{
+  opacity:100%;
+  filter:none;
+  border: solid 10px gray;
+}
+
 
 #darkhorse{
   height: 250px;
